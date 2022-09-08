@@ -8,7 +8,7 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-jodie/gatsby-config.js
     siteTitle: `Vital`,
-    siteTitleAlt: `Vital - Portfolio de diseño`,
+    siteTitleAlt: `Vital - Estudio de arquitectura`,
     siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
     siteUrl: `https://onda-vital.netlify.app`,
     siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
