@@ -25,6 +25,7 @@ module.exports = {
           { name: `Proyectos`, slug: `/projects` },
           { name: 'Renders', slug: '/renders'},
           { name: `Nosotros`, slug: `/about` },
+          {name: 'Contáctanos', slug:'/contact'},
         ],
         homepageProjectLimit:4,
       },
