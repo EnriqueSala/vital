@@ -5,19 +5,47 @@ color: "black"
 custom: true
 cover: "./renders-cover-image.jpg"
 ---
-<div style={{ margin: `0 auto`, maxWidth: `70ch`, padding: `2rem` }}>
-<form name="contact" method="POST" data-netlify="true">
-  <p>
-    <label>Nombre: <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Tu correo: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Mensaje: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Enviar</button>
-  </p>
-</form>
+
+import { FiMail, FiPhone, FiFacebook } from "react-icons/fi";
+import { Grid, Box, Field, Textarea, Text, Button, Heading } from "theme-ui";
+
+<div style={{ margin: `0 auto`, maxWidth: `78ch`, padding: `2rem` }}>
+  <Box pl='3rem'>
+    <Heading as='h1'>Contáctanos</Heading>
+    <p>Envíanos un mensaje y te responderemos lo más pronto posible</p>
+  </Box>
+  
+  <Grid p='3rem' mt='2rem'columns={[1, 2]} style={{boxShadow:`0px 21px 41px -13px rgba(0, 0, 0, 0.18)`}}>
+    <Box as='form'>
+      <label>
+        <Field label='Nombre' name='name' defaultValue=''/>
+      </label>
+      <label>
+        <Field label='Correo' name='email' defaultValue=''/>
+      </label>
+      <label>
+        Mensaje
+        <Textarea rows={7}/>
+      </label>
+      <Button mt="20px">Enviar</Button>
+    </Box>
+    <Box pb='18%'style={{display:`flex`, flexDirection:`column`, justifyContent:`space-between`}}>
+      <Box pb='30%' style={{display:`flex`, flexDirection:`column`, justifyContent:`space-between`, height: `50%`}}>
+        <Text> 
+          Contacto
+        </Text>
+        <Grid gap={4} style={{display:`flex`, flexDirection:`column`, justifyContent:`space-between`, height:`50%`}}>
+          <a style={{display: `flex`, alignItems:`center`}} href='mailto:vital.arquitecturamx@gmail.com'><FiMail size={30} /><Text ml='4px'> Vital.arquitecturamx@gmail.com</Text></a>
+          <a style={{display: `flex`, alignItems:`center`}} href='https://wa.me/5219831045402'><FiPhone size={30}/><Text ml='4px'> 983 104 5402</Text></a>
+          <a style={{display: `flex`, alignItems:`center`}} href='https://www.facebook.com/vitalarquitecturamx'><FiFacebook size={30}/><Text ml='4px'> Vital. Estudio de Arquitectura</Text></a>
+        </Grid>
+        
+      </Box>
+      <Box>
+        <Text>Horario de atencion de 9 am a 6 pm</Text>
+      </Box>
+      
+    </Box>
+
+  </Grid>
 </div>
