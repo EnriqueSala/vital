@@ -11,7 +11,7 @@ module.exports = {
     siteTitleAlt: `Vital - Estudio de arquitectura`,
     siteHeadline: `Jodie - Gatsby Theme from @lekoarts`,
     siteUrl: `https://onda-vital.netlify.app`,
-    siteDescription: `Image-heavy photography portfolio with colorful accents & customizable pages. Includes adaptive image grids powered by CSS grid and automatic image integration into projects.`,
+    siteDescription: `Empresa dedicada al diseño arquitectónico, perspectivas digitales, desarrollo de planos ejecutivos, supervisión y administración de obra.`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
     author: `Jorge Sala`,
